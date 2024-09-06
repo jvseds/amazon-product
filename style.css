@@ -1,0 +1,21 @@
+body {
+    font-size: 10px;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-areas: 
+        "logo search search search search search search lang account orders cart"
+        "menu links links links links . . . . . ."
+    ;
+}
+
+section.upper-line {
+    background-color: #131921;
+}
+
+section.lower-line {
+    background-color: #232f3e;
+}
