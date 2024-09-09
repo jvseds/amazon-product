@@ -33,6 +33,7 @@ nav {
 /* upper navbar line */
 
 section.upper-line {
+    width: 100%;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     background-color: #131921;
@@ -96,8 +97,8 @@ span#search-departments-btn {
     color: #666666;
     background-color: #f0f0f0;
     border-radius: 0.1rem;
+    margin: 2% 2% 0 0;
 }
-
 
 span#search-departments-btn:hover {
     color: #000000;
@@ -105,8 +106,8 @@ span#search-departments-btn:hover {
 
 span#account-btn {
     grid-area: account;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-flow: column wrap; */
 }
 
 span#returns-orders-btn {
