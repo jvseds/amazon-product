@@ -139,14 +139,23 @@ section>ul.links-row {
 /* main - product */
 main {
     display: grid;
-    width: 100vw;
+    width: 96vw;
     height: 60vh;
-    grid-template-columns: 1fr 5fr 8fr 3fr;
+    grid-template-areas: 
+        "gallery gallery desc desc desc desc desc desc buy buy";
+}
+
+.product-gallery {
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(8, 1fr);
 }
 
 .product-images-item {
-    position: relative;
+    position: sticky;
+    width: 100%;
+    object-fit: cover;
 }
 
 .product-images-item:hover::after {
@@ -154,7 +163,7 @@ main {
     width: 100%;
     height: 100%;
     background-color: #000000;
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 7;
     grid-row: 1 / span 7;
     position: absolute;
     left: 100%;
@@ -195,3 +204,10 @@ main {
     grid-column: 1 / span 1;
     grid-row: 7 / span 1;
 }
+
+.product-details-text {
+    grid-area: desc;
+}
+
+    /* grid-template-columns: 1fr 5fr 8fr 3fr; */
+    /* grid-template-rows: repeat(8, 1fr); */
