@@ -143,6 +143,7 @@ main {
     height: 60vh;
     grid-template-areas: 
         "gallery gallery desc desc desc desc desc desc buy buy";
+    gap: 0.2rem;
 }
 
 .product-gallery {
@@ -150,12 +151,23 @@ main {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(8, 1fr);
+    gap: 0.2rem;
 }
 
 .product-images-item {
     position: sticky;
+    height: 100%;
     width: 100%;
-    object-fit: cover;
+    /* overflow: hidden; */
+}
+
+.product-images-item img {
+    /* render the images to fit the grid cell size */
+    width: 0;
+    height: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: scale-down;
 }
 
 .product-images-item:hover::after {
