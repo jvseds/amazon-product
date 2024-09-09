@@ -142,7 +142,7 @@ main {
     width: 96vw;
     height: 80vh;
     grid-template-areas: 
-        "gallery gallery desc desc desc desc desc desc buy";
+        "gallery gallery desc desc desc desc desc buy buy";
     gap: 0.2rem;
 }
 
@@ -222,8 +222,24 @@ main {
     background-color: #febd69;
 }
 
-.product-details-text {
+.product-details {
     grid-area: desc;
+}
+
+.product-details-text>article{
+    /* grid-area: desc; */
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "price price price ."
+        "details details . ."
+    ;
+    gap: 0.5rem;
+}
+
+.product-name-title {
+    grid-area: header;
+    background-color: #a5ffff;
 }
 
 .buy-product {
