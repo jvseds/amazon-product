@@ -38,7 +38,7 @@ section.upper-line {
     background-color: #131921;
     font-size: 1rem;
     padding: 1.2rem;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 section.links-line {
@@ -130,7 +130,7 @@ section>ul.links-row {
     display: flex;
     width: 50%;
     justify-content: space-between;
-    padding: 1%;
+    padding-left: 0.5%;
     text-transform: capitalize;
     font-weight: bold;
     font-size: 0.8rem;
